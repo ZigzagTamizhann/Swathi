@@ -1,0 +1,231 @@
+/* global styles */
+body {
+    text-align: center;
+    font-family: "Happy Monkey", system-ui;
+    background: linear-gradient(#ab0c0ccc, rgba(0, 0, 0, 0.855));
+    color: white;
+  }
+  
+  /* grouped styles */
+  h1,
+  h2,
+  h3,
+  h4,
+  p {
+    font-size: 50px;
+    text-shadow: 0px 0px 1px black;
+  }
+  p {
+    text-decoration: none;
+    font-size: 50px;
+    text-shadow: 0px 0px 1px black;
+  }
+  
+  /* header */
+  .header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .avatar { 
+    width: 20%;
+    height: 20%;
+    border-radius: 10%;
+    border: 6px solid rgba(255, 0, 0, 0.022);
+  }
+  
+  .age {
+    /* background: #6f0505cc; */
+    font-size: 50px;
+    padding: 5px 10px;
+    border-radius: 5px;
+  }
+  
+  .age {
+    margin: 5px 0 10px;
+  }
+  
+  .date {
+    margin: 0;
+  }
+  
+  /* gift section */
+  .gift-section {
+    margin-top: 50px;
+  }
+  .gift-title {
+    margin-bottom: 10px;
+    text-decoration: none;
+    color: white;
+  }
+  
+  .gift-hint {
+    margin-top: 0;
+  }
+  
+  .gift-cover {
+    width: 250px;
+    height: 200px;
+    background: url(swa\ \(1\).png);
+    background-size: cover;
+    background-position: center;
+    margin: 0 auto;
+    border: 6px solid white;
+    border-radius: 10px;
+    cursor: pointer;
+  }
+  .Jef:hover {
+    background: url(/swa\ \(10\).jpg);/* jef */
+    background-size: cover;
+    background-position: center;
+  }
+  
+  .kal:hover {
+    background: url(swa\ \(1\).JPG);/* kal*/
+    background-size: cover;
+    background-position: center;
+  }
+  .rajii:hover {
+    background: url(swa\ \(2\).jpg);/*raj */
+    background-size: cover;
+    background-position: center;
+  }
+  .veda:hover {
+    background: url(swa\ \(3\).jpg);/* ved */
+    background-size: cover;
+    background-position: center;
+  }
+  .Yuva:hover {
+    background: url(swa\ \(4\).jpg);/* yu */
+    background-size: cover;
+    background-position: center;
+  }
+  .Fre:hover {
+    background: url(swa\ \(5\).jpg);/* fre */
+    background-size: cover;
+    background-position: center;
+  }
+  .kis:hover {
+    background: url(swa\ \(6\).jpg);/* kis */
+    background-size: cover;
+    background-position: center;
+  }
+  .Mad:hover {
+    background: url(swa\ \(7\).jpg);/* man */
+    background-size: cover;
+    background-position: center;
+  }
+  .Pra:hover {
+    background: url(swa\ \(8\).jpg);/* pra */
+    background-size: cover;
+    background-position: center;
+  }
+  .ven:hover {
+    background: url(swa\ \(9\).jpg);/* ven */
+    background-size: cover;
+    background-position: center;
+  }
+  .Yog:hover {
+    background: url(swa\ \(11\).jpg);/* yog */
+    background-size: cover;
+    background-position: center;
+  }
+
+
+
+
+
+  .background-video {
+    position: fixed; /* Fixed position relative to the viewport */
+    top: 0;
+    left: 0;
+    width: 125%; /* Full width */
+    height: 100%; /* Full height */
+    object-fit: cover; /* Ensures the video covers the entire container */
+    z-index: -1; /* Behind other elements */
+    background-color: rgba(0, 0, 0, 0.2);
+  }
+  
+  /* footer */
+  .footer {
+    margin-top: 30px;
+  }
+  
+  .footer a {
+    color: white;
+  }
+
+
+
+ /* * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+} */
+
+/* body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+}  */
+
+.grid-container {
+    display: grid;
+    gap: 10px;
+    width: 90%;
+    height: 90%;
+    margin: auto;
+}
+
+/* Default grid layout */
+.grid-item {
+    background-color: #4CAF50;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    font-size: 30px;
+    border-radius: 5px;
+}
+
+/* Responsive grid layout */
+@media (min-width: 1200px) { 
+    .grid-container {
+        grid-template-columns: repeat(5, 1fr);
+    }
+    .gift-cover {
+      width: 250px;
+      height: 200px;
+    }
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+    .grid-container {
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+    .grid-container {
+        grid-template-columns: repeat(3, 1fr);
+    }
+    .gift-cover {
+      width: 200px;
+      height: 150px;
+    }
+}
+
+@media (min-width: 576px) and (max-width: 767px) {
+    .grid-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 575px) {
+    .grid-container {
+        grid-template-columns: 1fr;
+    }
+} 
